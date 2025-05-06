@@ -14,3 +14,12 @@ Can use to update by record instead of whole table.
       ...
  </DataGrid>
 ```
+
+In code behind / View model:
+```
+foreach (var changedItem in RowChangeTracker.GetChangedItems())
+{
+    ...
+}
+//RowChangeTracker.ClearChanges();
+```
